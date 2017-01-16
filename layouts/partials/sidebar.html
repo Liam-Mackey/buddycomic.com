@@ -1,0 +1,26 @@
+<div id="sidebar" class="col-xs-6 col-sm-4 col-md-3 sidebar-offcanvas">
+  <div class="sidebar-content">
+    <a href="/about"><img class="circle-img with-hover-icon" src="/img/buddy.jpg"></a>
+    <h1 class="sidebar-heading"><a href="/">{{ .Site.Title }}</a></h1>
+    {{ range .Site.Params.sidebarAbout }}
+      <p class="sidebar-p">{{ . | safeHTML }}</p>
+    {{ end }}
+    <ul class="sidebar-menu">
+      {{ $url := .Site.BaseURL }}
+      {{ range .Site.Params.navlinks }}
+        <li><a href="{{ $url }}{{ .url }}">{{ .name }}</a></li>
+      {{ end }}
+    </ul>
+    {{ partial "socialButtonsInSideBar.html" . }}
+
+    <div class="copyright">
+      <p class="credit">
+        {{ with .Site.Params.copyright }}
+          {{ . | safeHTML }}
+        {{ end }}
+        {{ partial "attribution.html" . }}
+      </p>
+      <iframe src="https://calendar.google.com/calendar/embed?src=vhr0gi6gl2sftsm1tjcfku3oak%40group.calendar.google.com&ctz=America/New_York" style="border: 1px solid #999999" width="100%" height="250vw" frameborder="0" scrolling="no"></iframe>
+    </div>
+  </div>
+</div>

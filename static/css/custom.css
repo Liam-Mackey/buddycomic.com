@@ -1,0 +1,32 @@
+/* your styles go here */
+.sidebar-heading {
+  font-family: 'Indie Flower', cursive;
+  font-size: 2em;
+}
+
+.sidebar-p {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.15em;
+}
+
+.sidebar-menu {
+  font-family: 'Indie Flower', cursive;
+  font-size: 1.15em;
+}
+
+body {
+	background-color: #fdffeb;
+}
+
+.circle-img {
+	width: 15vw;
+	height: 15vw;
+	border-radius: 50%;
+	margin-bottom: 5%;
+	transition: all .2s ease-in-out;
+
+}
+
+.circle-img:hover {
+	transform: scale(1.05);
+}
