@@ -11,7 +11,7 @@
 
 .sidebar-menu {
   font-family: 'Indie Flower', cursive;
-  font-size: 1.15em;
+  font-size: 1.4em;
 }
 
 body {
@@ -29,4 +29,10 @@ body {
 
 .circle-img:hover {
 	transform: scale(1.05);
+}
+
+.video-container{
+	width: 100%;
+	margin: 0 auto;
+
 }
